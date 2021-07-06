@@ -1,0 +1,484 @@
+
+*{
+    font-family: sans-serif;
+}
+body{
+    background-color: rgb(201, 201, 201);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.emoji {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.3);
+    margin: 20px;
+    background-color: #ffda6a;
+}
+
+.face {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+}
+
+.angry {
+    background: linear-gradient(#d5234c, #ffda6a);
+}
+
+
+.face-haha {
+    animation: haha-face 2s linear infinite;
+}
+
+.eyes-haha {
+    position: absolute;
+    width: 26px;
+    height: 6px;
+    border-radius: 2px;
+    left: 47px;
+    top: 35px;
+    transform: rotate(20deg);
+    box-shadow: -25px 5px 0 0 #000, 25px -5px 0 0 #000;
+}
+
+.eyes-haha:after {
+    position: absolute;
+    content: '';
+    width: 26px;
+    height: 6px;
+    border-radius: 2px;
+    transform: rotate(-40deg);
+    box-shadow: -25px -5px 0 0 #000, 25px 5px 0 0 #000;
+}
+
+.mouth-haha {
+    position: absolute;
+    width: 80px;
+    height: 40px;
+    left: 20px;
+    top: 50%;
+    background: #000;
+    border-radius: 0 0 40px 40px;
+    overflow: hidden;
+    animation: haha-mouth 2s linear infinite;
+}
+
+.tongue-haha {
+    position: absolute;
+    width: 70px;
+    height: 30px;
+    background: #f55064;
+    left: 5px;
+    bottom: -10px;
+    border-radius: 50%;
+}
+
+@keyframes haha-face {
+
+    10%,30%,50% {
+        transform: translateY(25px);
+    }
+
+    20%,40% {
+        transform: translateY(15px);
+    }
+
+    60%,80% {
+        transform: translateY(0);
+    }
+
+    70%,90% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes haha-mouth {
+
+    10%,30%,50% {
+        transform: scale(0.6);
+        top: 45%;
+    }
+
+    20%,40% {
+        transform: scale(0.8);
+        top: 45%;
+    }
+
+    60%,80% {
+        transform: scale(1);
+        top: 50%;
+    }
+
+    70% {
+        transform: scale(1.2);
+        top: 50%;
+    }
+
+    90% {
+        transform: scale(1.1);
+        top: 50%;
+    }
+}
+
+.face-wow {
+    animation: wow-face 3s linear infinite;
+}
+
+.eyebrows-wow {
+    position: absolute;
+    top: 15px;
+    left: 57px;
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    box-shadow: -18px 0 0 0 #000, -32px 0 0 0 #000, 18px 0 0 0 #000, 32px 0 0 0 #000;
+    animation: wow-brow 3s linear infinite;
+}
+
+.eyebrows-wow:before,
+.eyebrows-wow:after {
+    position: absolute;
+    content: '';
+    width: 24px;
+    height: 20px;
+    border: 6px solid transparent;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border-top-color: black;
+    top: -3px;
+
+}
+
+.eyebrows-wow:before {
+    margin-left: -34px;
+}
+
+.eyebrows-wow:after {
+    margin-left: 16px;
+}
+
+.eyes-wow {
+    position: absolute;
+    width: 16px;
+    height: 24px;
+    left: 52px;
+    top: 35px;
+    border-radius: 50%;
+    box-shadow: 25px 0 0 0 #000, -25px 0 0 0 #000;
+}
+
+.mouth-wow {
+    position: absolute;
+    width: 30px;
+    height: 45px;
+    left: 45px;
+    top: 50%;
+    border-radius: 50%;
+    background: #000;
+    animation: wow-mouth 3s linear infinite;
+}
+
+@keyframes wow-face {
+
+    15%,
+    25% {
+        transform: rotate(20deg) translateX(-25px);
+    }
+
+    45%,
+    65% {
+        transform: rotate(-20deg) translateX(25px);
+    }
+
+    75%,
+    100% {
+        transform: rotate(0deg) translateX(0);
+    }
+}
+
+@keyframes wow-brow {
+
+    15%,
+    65% {
+        top: 25px;
+    }
+
+    75%,
+    100%,
+    0% {
+        top: 15px;
+    }
+}
+
+@keyframes wow-mouth {
+
+    10%,
+    30% {
+        width: 20px;
+        height: 20px;
+        left: 50px;
+    }
+
+    50%,
+    70% {
+        width: 30px;
+        height: 40px;
+        left: 45px;
+    }
+
+    75%,
+    100% {
+        height: 50px;
+    }
+}
+
+.face-sad {
+    animation: sad-face 2s ease-in infinite;
+}
+
+.eyebrows-sad {
+    position: absolute;
+    left: 57px;
+    top: 35px;
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    box-shadow: -40px 9px 0 0 #000, -25px 0 0 0 #000, 25px 0 0 0 #000, 40px 9px 0 0 #000;
+}
+
+.eyebrows-sad:before,
+.eyebrows-sad:after {
+    position: absolute;
+    content: '';
+    width: 30px;
+    height: 20px;
+    border: 6px solid transparent;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border-top-color: black;
+    top: 2px;
+    left: -12px;
+}
+
+.eyebrows-sad:before {
+    margin-left: -30px;
+    transform: rotate(-30deg);
+}
+
+.eyebrows-sad:after {
+    margin-left: 30px;
+    transform: rotate(30deg);
+}
+
+.eyes-sad {
+    position: absolute;
+    width: 14px;
+    height: 16px;
+    left: 53px;
+    top: 50px;
+    border-radius: 50%;
+    box-shadow: 25px 0 0 0 #000, -25px 0 0 0 #000;
+}
+
+.eyes-sad:after {
+    position: absolute;
+    content: '';
+    background: #548dff;
+    width: 12px;
+    height: 12px;
+    border-radius: 0 10px 10px 10px;
+    transform-origin: 0% 0%;
+    animation: tear-drop 2s ease-in infinite;
+}
+
+.mouth-sad {
+    position: absolute;
+    width: 60px;
+    height: 80px;
+    left: 30px;
+    top: 80px;
+    box-sizing: border-box;
+    border: 6px solid transparent;
+    border-radius: 50%;
+    border-top-color: black;
+    animation: sad-mouth 2s ease-in infinite;
+}
+
+.mouth-sad:after {
+    position: absolute;
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    top: 4px;
+    left: 21px;
+    box-shadow: -18px 0 0 0 #000, 18px 0 0 0 #000;
+}
+
+@keyframes sad-face {
+
+    25%,
+    35% {
+        top: -15px;
+    }
+
+    55%,
+    95% {
+        top: 10px;
+    }
+
+    100%,
+    0% {
+        top: 0;
+    }
+}
+
+@keyframes sad-mouth {
+
+    25%,
+    35% {
+        transform: scale(0.85);
+        top: 70px;
+    }
+
+    55%,
+    100%,
+    0% {
+        transform: scale(1);
+        top: 80px;
+    }
+}
+
+@keyframes tear-drop {
+
+    0%,
+    100% {
+        display: block;
+        left: 32px;
+        top: 15px;
+        transform: rotate(45deg) scale(0);
+    }
+
+    25% {
+        display: block;
+        left: 32px;
+        transform: rotate(45deg) scale(2);
+        z-index: 1;
+    }
+
+    49.9% {
+        display: block;
+        left: 32px;
+        top: 65px;
+        transform: rotate(45deg) scale(0);
+    }
+
+    50% {
+        display: block;
+        left: -18px;
+        top: 15px;
+        transform: rotate(45deg) scale(0);
+    }
+
+    75% {
+        display: block;
+        left: -18px;
+        transform: rotate(45deg) scale(2);
+    }
+
+    99.9% {
+        display: block;
+        left: -18px;
+        top: 65px;
+        transform: rotate(45deg) scale(0);
+        z-index: 1;
+    }
+}
+
+.face-angry {
+    animation: angry-face 2s ease-in infinite;
+}
+
+.eyebrows-angry {
+    position: absolute;
+    left: 57px;
+    top: 55px;
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    box-shadow: -44px 5px 0 0 #000, -9px 16px 0 0 #000, 9px 16px 0 0 #000, 44px 5px 0 0 #000;
+}
+
+.eyebrows-angry:before,
+.eyebrows-angry:after {
+    position: absolute;
+    content: '';
+    width: 50px;
+    height: 20px;
+    border: 6px solid transparent;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border-bottom-color: black;
+}
+
+.eyebrows-angry:before {
+    margin-left: -47px;
+    transform: rotate(15deg);
+}
+
+.eyebrows-angry:after {
+    margin-left: 3px;
+    transform: rotate(-15deg);
+}
+
+.eyes-angry {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    left: 54px;
+    top: 70px;
+    border-radius: 50%;
+    box-shadow: 25px 0 0 0 #000, -25px 0 0 0 #000;
+}
+
+.mouth-angry {
+    position: absolute;
+    width: 36px;
+    height: 18px;
+    left: 42px;
+    bottom: 15px;
+    background: #000;
+    border-radius: 50%;
+    animation: angry-mouth 2s ease-in infinite;
+}
+
+@keyframes angry-face {
+
+    35%,
+    60% {
+        transform: translateX(0) translateY(10px) scale(0.9);
+    }
+
+    40%,
+    50% {
+        transform: translateX(-5px) translateY(10px) scale(0.9);
+    }
+
+    45%,
+    55% {
+        transform: translateX(5px) translateY(10px) scale(0.9);
+    }
+}
+
+@keyframes angry-mouth {
+
+    25%,
+    50% {
+        height: 6px;
+        bottom: 25px;
+    }
+}

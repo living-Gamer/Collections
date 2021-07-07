@@ -17,5 +17,6 @@ The Projects are listed below :
 * Ghost Text
 * Neon Light
 * Creative Loader
+* Card
 
 Some of the Projects are not self-made but are self-written. The channel which helped me creating those projects is [Online Tutorial Youtube Channel](https://www.youtube.com/channel/UCbwXnUipZsLfUckBPsC7Jog)

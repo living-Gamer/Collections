@@ -9,14 +9,19 @@ The main reason for Using HTML, CSS is to ensure optization and work. As HTML is
 But writting all those Reposotries wasn't easy. At the first version it had many bugs. On fixing those Bugs new Bugs started genrating. At the last version i.e. 3.0.0. almost all bugs are removed. Since for all beginner developers those bugs can hamper, so these codes are being written to give them a quick start. Though the Bug are fixed but some of still there. But those will also be removed with the coming of new versions.
 
 The Projects are listed below :
-* FaceBook Emojis
-* Running Horse
+* SimpleAnimations:
 * Ripple Effect
-* Eyes-follow Mouse
+* Running Horse
+* TextPack :
 * Video inside Text
-* Ghost Text
-* Neon Light
 * Creative Loader
-* Card
+* Ghost Text
+* Advance Animations :
+* Neon Light
+* Eyes-follow Mouse
+* FaceBook Emojis
+* CardPack :
+* Classic Card
+* Glass Card
 
 Some of the Projects are not self-made but are self-written. The channel which helped me creating those projects is [Online Tutorial Youtube Channel](https://www.youtube.com/channel/UCbwXnUipZsLfUckBPsC7Jog)

@@ -5,29 +5,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Card</title>
+    <title>ClassicCard</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="card">
-        <div class="circle"></div>
-        <h2>Card</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur similique culpa aut error ducimus quos ad
-        </p>
+    <div data-tilt data-tilt-reverse="true" class="card">
+        <div class="circle">
+            <div class="emoji haha">
+                <div class="face face-haha">
+                    <div class="eyes-haha"></div>
+                    <div class="mouth-haha">
+                        <div class="tongue-haha"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="holder">
+            <h1>Haha</h1>
+            <button>ReadMore</button>
+        </div>
     </div>
-    <div class="card">
-        <div class="circle"></div>
-        <h2>Card</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur similique culpa aut error ducimus quos ad
-        </p>
+    <div data-tilt data-tilt-reverse="true" class="card">
+        <div class="circle">
+            <div class="emoji wow">
+                <div class="face face-wow">
+                    <div class="eyebrows-wow"></div>
+                    <div class="eyes-wow"></div>
+                    <div class="mouth-wow"></div>
+                </div>
+            </div>
+        </div>
+        <div class="holder">
+            <h1>WoW</h1>
+            <button>ReadMore</button>
+        </div>
     </div>
-    <div class="card">
-        <div class="circle"></div>
-        <h2>Card</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur similique culpa aut error ducimus quos ad
-        </p>
+    <div data-tilt data-tilt-reverse="true" class="card">
+        <div class="circle">
+            <div class="emoji sad">
+                <div class="face face-sad">
+                    <div class="eyebrows-sad"></div>
+                    <div class="eyes-sad"></div>
+                    <div class="mouth-sad"></div>
+                </div>
+            </div>
+        </div>
+        <div class="holder">
+            <h1>Sad</h1>
+            <button>ReadMore</button>
+        </div>
     </div>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".card"),{
+                max: 25,
+                speed: 400,
+            });
+    </script>
 </body>
 
 </html>

@@ -10,18 +10,18 @@ But writting all those Reposotries wasn't easy. At the first version it had many
 
 The Projects are listed below :
 * SimpleAnimations:
-* Ripple Effect
-* Running Horse
+  * Ripple Effect
+  * Running Horse
 * TextPack :
-* Video inside Text
-* Creative Loader
-* Ghost Text
+  * Video inside Text
+  * Creative Loader
+  * Ghost Text
 * Advance Animations :
-* Neon Light
-* Eyes-follow Mouse
-* FaceBook Emojis
+  * Neon Light
+  * Eyes-follow Mouse
+  * FaceBook Emojis
 * CardPack :
-* Classic Card
-* Glass Card
+  * Classic Card
+  * Glass Card
 
 Some of the Projects are not self-made but are self-written. The channel which helped me creating those projects is [Online Tutorial Youtube Channel](https://www.youtube.com/channel/UCbwXnUipZsLfUckBPsC7Jog)

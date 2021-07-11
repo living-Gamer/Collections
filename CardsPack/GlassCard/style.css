@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+*{
+    text-align: center;
+    font-family: 'Righteous', sans-serif;
+    box-sizing: border-box;
+    color: #fff;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(0, 1, 77);
+}
+body:before, body:after{
+    content: '';
+    z-index: -1;
+    position: absolute;
+    height: 350px;
+    width: 350px;
+    top:0;
+    left: 0;
+    background:linear-gradient(#fc5a03, #fcb603);
+    border-radius: 50%;
+}
+body:after{
+    height: 300px;
+    width: 300px;
+    top: 100%;
+    left: 100%;
+    transform: translate(-100%, -100%);
+    background: linear-gradient(#ff00d4,#bf00ff);
+}
+.card{
+    height: 400px;
+    width: 20%;
+    background: rgba(255, 255, 255, 0.225);
+    margin-right: 25px;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.content{
+    transition: 1s;
+    transform: translateY(300px);
+}
+.card:hover .content{
+    transform: translateY(0px);
+}

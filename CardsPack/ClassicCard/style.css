@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+*{
+    font-family: 'Righteous', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    background: rgb(28, 202, 255);
+}
+.card{
+    height: 400px;
+    width: 20%;
+    background-color: rgb(243, 243, 243);
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgb(122, 122, 122);
+    position: relative;
+    overflow: hidden;
+    margin-left: 25px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.emoji {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.3);
+    margin: 20px;
+    background-color: #ffda6a;
+}
+.face {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+}
+
+.eyes-haha {
+    position: absolute;
+    width: 26px;
+    height: 6px;
+    border-radius: 2px;
+    left: 47px;
+    top: 35px;
+    transform: rotate(20deg);
+    box-shadow: -25px 5px 0 0 #000, 25px -5px 0 0 #000;
+}
+.eyes-haha:after {
+    position: absolute;
+    content: '';
+    width: 26px;
+    height: 6px;
+    border-radius: 2px;
+    transform: rotate(-40deg);
+    box-shadow: -25px -5px 0 0 #000, 25px 5px 0 0 #000;
+}
+.mouth-haha {
+    position: absolute;
+    width: 80px;
+    height: 40px;
+    left: 20px;
+    top: 50%;
+    background: #000;
+    border-radius: 0 0 40px 40px;
+    overflow: hidden;
+}
+.tongue-haha {
+    position: absolute;
+    width: 70px;
+    height: 30px;
+    background: #f55064;
+    left: 5px;
+    bottom: -10px;
+    border-radius: 50%;
+}
+.eyebrows-wow {
+    position: absolute;
+    top: 15px;
+    left: 57px;
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    box-shadow: -18px 0 0 0 #000, -32px 0 0 0 #000, 18px 0 0 0 #000, 32px 0 0 0 #000;
+}
+.eyebrows-wow:before,
+.eyebrows-wow:after {
+    position: absolute;
+    content: '';
+    width: 24px;
+    height: 20px;
+    border: 6px solid transparent;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border-top-color: black;
+    top: -3px;
+
+}
+.eyebrows-wow:before {
+    margin-left: -34px;
+}
+
+.eyebrows-wow:after {
+    margin-left: 16px;
+}
+
+.eyes-wow {
+    position: absolute;
+    width: 16px;
+    height: 24px;
+    left: 52px;
+    top: 35px;
+    border-radius: 50%;
+    box-shadow: 25px 0 0 0 #000, -25px 0 0 0 #000;
+}
+
+.mouth-wow {
+    position: absolute;
+    width: 30px;
+    height: 45px;
+    left: 45px;
+    top: 50%;
+    border-radius: 50%;
+    background: #000;
+}
+
+.eyebrows-sad {
+    position: absolute;
+    left: 57px;
+    top: 35px;
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    box-shadow: -40px 9px 0 0 #000, -25px 0 0 0 #000, 25px 0 0 0 #000, 40px 9px 0 0 #000;
+}
+
+.eyebrows-sad:before,
+.eyebrows-sad:after {
+    position: absolute;
+    content: '';
+    width: 30px;
+    height: 20px;
+    border: 6px solid transparent;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border-top-color: black;
+    top: 2px;
+    left: -12px;
+}
+
+.eyebrows-sad:before {
+    margin-left: -30px;
+    transform: rotate(-30deg);
+}
+
+.eyebrows-sad:after {
+    margin-left: 30px;
+    transform: rotate(30deg);
+}
+
+.eyes-sad {
+    position: absolute;
+    width: 14px;
+    height: 16px;
+    left: 53px;
+    top: 50px;
+    border-radius: 50%;
+    box-shadow: 25px 0 0 0 #000, -25px 0 0 0 #000;
+}
+
+.mouth-sad {
+    position: absolute;
+    width: 60px;
+    height: 80px;
+    left: 30px;
+    top: 80px;
+    box-sizing: border-box;
+    border: 6px solid transparent;
+    border-radius: 50%;
+    border-top-color: black;
+    animation: sad-mouth 2s ease-in infinite;
+}
+
+.mouth-sad:after {
+    position: absolute;
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    top: 4px;
+    left: 21px;
+    box-shadow: -18px 0 0 0 #000, 18px 0 0 0 #000;
+}
+
+.circle{
+    background-color: rgb(28, 202, 255);
+    border-radius: 50%;
+    height: 350px;
+    width: 350px;
+    transition: 1s;
+    position: absolute;
+    top: -25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.holder{
+    position: relative;
+    top: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+button{
+    height: 30px;
+    width: 100px;
+    background: white;
+    border-radius: 5px;
+    border: 2px solid rgb(28, 202, 255);
+    color: rgb(28, 202, 255);
+    transition: 0.4s;
+    cursor: pointer;
+}
+button:hover{
+    background: rgb(28, 202, 255);
+    color: white;
+}

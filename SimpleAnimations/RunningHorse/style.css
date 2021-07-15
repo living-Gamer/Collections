@@ -28,22 +28,17 @@ Click the horse for slow-mo :)
   height: 20vh;
   border-radius: 50%;
   background-color: var(--color-sun);
-  animation: changemoon 5s linear infinite;
+  z-index: 1000;
+  transition: 1s;
 }
-@keyframes changemoon{
-  0%, 100%{
-    background:4px;
-    left: 80%;
-    background-color: var(--color-sun);
-  }
-  25%, 75%{
-    left: 60%;
-    background-color: rgb(255, 153, 0);
-  }
-  50%{
-    left: 40%;
-    background-color: rgb(233, 233, 233);
-  }
+#sun.dark{
+  position: absolute;
+  top: 40px;
+  left: 60%;
+  width: 20vh;
+  height: 20vh;
+  border-radius: 50%;
+  background-color: rgb(231, 231, 231);
 }
 input[type=checkbox] {
   opacity: 0;
@@ -67,13 +62,11 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
+  transition: 1s;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(30%, #4e8cff), to(#00d4ff));
-  animation: changesky 5s infinite;
 }
-@keyframes changesky {
-  0%, 100%{background:#00d4ff;}
-  25%, 75%{background:#ffd900;}
-  50%{background:#000042;}
+body.night{
+  background: linear-gradient(#00358b, #000711);
 }
 body {
   display: -webkit-box;
@@ -97,7 +90,7 @@ label {
   overflow: hidden;
 }
 
-.floor {
+.floor, .nightfloor {
   background-color: var(--color-floor);
   background: linear-gradient(9deg, #07b43b 0%, #d9ff00 100%);
   position: fixed;
@@ -106,8 +99,11 @@ label {
   right: 0;
   bottom: 0;
   overflow: hidden;
+  transition: 1s;
 }
-
+.nightfloor{
+  background: linear-gradient(#184f00, #007a00);
+}
 .dust .particle {
   background-color: var(--color-dust);
   width: 0.05rem;

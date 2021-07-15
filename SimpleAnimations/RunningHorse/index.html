@@ -183,8 +183,17 @@
             <div class="particle"></div>
         </div>
 
-
     </label>
+    <script>
+        var sun = document.getElementById('sun');
+        var body =  document.querySelector('body');
+        var floor = document.querySelector('.floor');
+        sun.onclick = function(){
+            sun.classList.toggle('dark');
+            body.classList.toggle('night');
+            floor.classList.toggle('nightfloor');
+        }
+    </script>
 </body>
 
 </html><input type="checkbox" id="toggle">

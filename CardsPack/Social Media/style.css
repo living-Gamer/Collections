@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    min-height: 100vh;
+    overflow: hidden;
+}
+section{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.card{
+    height: 15vh;
+    width: 15vh;
+    background-color: rgb(236, 236, 236);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    font-size: 2.5em;
+    box-shadow: 0px 3px 10px grey;
+}
+
+span{
+    color: black;
+    display: none;
+    position: absolute;
+    font-size: 3.5em;
+    left:50%;
+    transform: translate(-50%, 0%);
+}
+.card:hover i{
+    color:white;
+    transform: scale(1.5);
+}
+.card:hover span{
+    display: block;
+    transform: translate(-50%, 75%);
+}
+#fb:hover{
+    background: rgb(43, 160, 255);
+}
+#wa:hover{
+    background: rgb(0, 199, 90);
+}
+#yt:hover{
+    background: rgb(255, 72, 0);
+}
+#tw:hover{
+    background: rgb(0, 174, 255);
+}
+#ig:hover{
+    background: rgb(226, 82, 255);
+}

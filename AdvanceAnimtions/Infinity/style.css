@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(32, 32, 32);
+}
+.circle{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    background-color: rgb(32, 32, 32);
+    border-radius: 50%;
+    border: 30px solid rgb(73, 73, 73);
+    left: 15px;
+    z-index: 1;
+}
+.circle:nth-child(2){
+    left: -15px;
+}
+.ball{
+    height: 30px;
+    width: 30px;
+    background-color: white;
+    border-radius: 50%;
+    position: relative;
+    top: 100%;
+    left: -10%;
+    transform: translate(0%, -50%);
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediaPlatforms</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3076c377a8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section>
+        <div id="fb" class="card">
+            <span>Facebook</span>
+            <i class="fab fa-facebook-f"></i>
+        </div>
+        <div id="wa" class="card">
+            <span>Whatsapp</span>
+            <i class="fab fa-whatsapp"></i>
+        </div>
+        <div id="yt" class="card">
+            <span>Youtube</span>
+            <i class="fab fa-youtube"></i>
+        </div>
+        <div id="tw" class="card">
+            <span>Twitter</span>
+            <i class="fab fa-twitter"></i>
+        </div>
+        <div id="ig" class="card">
+            <span>Instagram</span>
+            <i class="fab fa-instagram"></i>
+        </div>
+    </section>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelectorAll(".card"), {
+            max: 25,
+            speed: 400
+        });
+        VanillaTilt.init(document.querySelectorAll(".your-element"));
+    </script>
+</body>
+
+</html>

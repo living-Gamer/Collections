@@ -23,5 +23,6 @@ The Projects are listed below :
 * CardPack :
   * Classic Card
   * Glass Card
+  * Social Media
 
 Some of the Projects are not self-made but are self-written. The channel which helped me creating those projects is [Online Tutorial Youtube Channel](https://www.youtube.com/channel/UCbwXnUipZsLfUckBPsC7Jog)

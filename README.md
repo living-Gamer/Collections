@@ -12,6 +12,7 @@ The Projects are listed below :
 * SimpleAnimations:
   * Ripple Effect
   * Running Horse
+  * Amazon Gift Box
 * TextPack :
   * Video inside Text
   * Creative Loader
@@ -24,5 +25,6 @@ The Projects are listed below :
   * Classic Card
   * Glass Card
   * Social Media
+  * CheckOut Form
 
 Some of the Projects are not self-made but are self-written. The channel which helped me creating those projects is [Online Tutorial Youtube Channel](https://www.youtube.com/channel/UCbwXnUipZsLfUckBPsC7Jog)

@@ -6,13 +6,14 @@ These Projects are a Huge Mixture of HTML, CSS and JavaScript. All the files are
 
 The main reason for Using HTML, CSS is to ensure optization and work. As HTML is well-known markup language and has different features. It is also easy-to-learn. Hence any Beginne Coder can learn using this Projects. Secondly the main reason to use CSS is to Add Awesome designs to HTML. CSS is also easy as HTML and also has many features. Therefore all the Animations ehich are seen in the files are made using CSS. But the use of JavaScript is to add connections between JavaScript. In some of the files the Javascript creates the several functions which works only when the User interacts. Hence these 3 technologies makes the projects more variant.
 
-But writting all those Reposotries wasn't easy. At the first version it had many bugs. On fixing those Bugs new Bugs started genrating. At the last version i.e. 3.0.0. almost all bugs are removed. Since for all beginner developers those bugs can hamper, so these codes are being written to give them a quick start. Though the Bug are fixed but some of still there. But those will also be removed with the coming of new versions.
+But writting all those Reposotries wasn't easy. At the first version it had many bugs. On fixing those Bugs new Bugs started genrating. At the last version i.e. 3.0.0. almost all bugs are removed. Since for all beginner developers those bugs can hamper, so these codes are being written to give them a quick start. Though the Bug are being fixed but some of still there. But those will also be removed with the coming of new versions.
 
 The Projects are listed below :
+* 3d
+  * Amazon Gift Box
 * SimpleAnimations:
   * Ripple Effect
   * Running Horse
-  * Amazon Gift Box
 * TextPack :
   * Video inside Text
   * Creative Loader

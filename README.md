@@ -9,10 +9,10 @@ The main reason for Using HTML, CSS is to ensure optization and work. Since HTML
 The Projects are listed below :
 * 3d
   * Amazon Gift Box
-  * Jeep Car
 * Advance Animations :
   * Eyes-follow Mouse
   * FaceBook Emojis
+  * Infinnity
   * Neon Light
 * Basics
   * Ripple Effect

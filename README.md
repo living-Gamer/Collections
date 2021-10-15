@@ -9,6 +9,7 @@ The main reason for Using HTML, CSS is to ensure optization and work. Since HTML
 The Projects are listed below :
 * 3d
   * Amazon Gift Box
+  * 3D Pyramid
 * Advance Animations :
   * Eyes-follow Mouse
   * FaceBook Emojis

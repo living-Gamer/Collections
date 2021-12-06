@@ -9,4 +9,6 @@ The main reason for Using HTML, CSS is to ensure optization and work. Since HTML
 ![Screenshot (33)](https://user-images.githubusercontent.com/62102478/144831672-105a7a7e-a5c6-4bc1-9373-f0db7479f2f2.png)
 ![Screenshot (29)](https://user-images.githubusercontent.com/62102478/144831055-4985f8c1-b4fc-4537-93da-40ce7542446a.png)
 
-Some of the Projects are not self-made but are self-written. The channel which helped me creating some of those projects is [Online Tutorial Youtube Channel](https://www.youtube.com/channel/UCbwXnUipZsLfUckBPsC7Jog)
+Thank you,
+[Github](https://github.com/)
+[Online Tutorial Youtube Channel](https://www.youtube.com/channel/UCbwXnUipZsLfUckBPsC7Jog)

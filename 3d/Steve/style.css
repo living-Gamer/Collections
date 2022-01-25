@@ -1,0 +1,345 @@
+@import url('http://fonts.cdnfonts.com/css/minecraft-4');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Minecraft', sans-serif;
+}
+body{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+#steve{
+    position: relative;
+    width: 250px;
+    height: 450px;
+    transform-style: preserve-3d;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#head{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    transform-style: preserve-3d;
+    transform-origin: bottom center;
+}
+#body{
+    position: relative;
+    width: 100px;
+    height: 350px;
+    transform-style: preserve-3d;
+}
+.arm{
+    position: absolute;
+    width: 50px;
+    height: 150px;
+    transform-style: preserve-3d;
+    transform-origin: top center;
+}
+#lefthand{left: -50px;}
+#righthand{left: 100px;}
+#leftleg{top: 150px;}
+#rightleg{top: 150px;left:50%;}
+#vest{
+    position: absolute;
+    width: 100px;
+    height: 150px;
+    transform-style: preserve-3d;
+}
+span{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#head span:nth-child(1){
+    width: 100px;
+    height: 100px;
+    transform: rotateY(0deg) translate3d(0px, 0, -50px);
+    background: url("img/backface.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+#head span:nth-child(2){
+    width: 100px;
+    height: 100px;
+    transform: rotateY(90deg) translate3d(-0px, 0, 50px);
+    background: url("img/leftface.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+#head span:nth-child(3){
+    width: 100px;
+    height: 100px;
+    transform: rotateY(0deg) translate3d(0px, 0, 50px);
+    background: url("img/frontface.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+#head span:nth-child(4){
+    width: 100px;
+    height: 100px;
+    transform: rotateY(90deg) translate3d(-0px, 0, -50px);
+    background: url("img/leftface.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    z-index: 10;
+}
+#head span:nth-child(5){
+    width: 100px;
+    height: 100px;
+    transform: rotateX(90deg) translate3d(0px, 0px, 50px);
+    background: url("img/top.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    z-index: 10;
+}
+#head span:nth-child(6){
+    width: 100px;
+    height: 100px;
+    transform: rotateX(90deg) translate3d(0px, 0px, -50px);
+    background: url("img/bottom.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    z-index: 10;
+}
+.arm span:nth-child(1){
+    width: 50px;
+    height: 150px;
+    transform: rotateY(0deg) translate3d(0px, 0, -25px);
+    background: #d8aa77;
+}
+.arm span:nth-child(2){
+    width: 50px;
+    height: 150px;
+    transform: rotateY(90deg) translate3d(0px, 0, 25px);
+    background: #ca9864;
+}
+.arm span:nth-child(3){
+    width: 50px;
+    height: 150px;
+    transform: rotateY(0deg) translate3d(0px, 0, 25px);
+    background: #d8aa77;
+}
+.arm span:nth-child(4){
+    width: 50px;
+    height: 150px;
+    transform: rotateY(90deg) translate3d(-0px, 0, -25px);
+    background: #ca9864;
+}
+.arm span:nth-child(5){
+    width: 50px;
+    height: 50px;
+    transform: rotateX(90deg) translate3d(0px, 0px, 25px);
+    background: #ca9864;
+}
+.arm span:nth-child(6){
+    width: 50px;
+    height: 50px;
+    transform: rotateX(90deg) translate3d(0px, 0px, -125px);
+    background: #d8aa77;
+}
+#vest span:nth-child(1){
+    width: 100px;
+    height: 150px;
+    transform: rotateY(0deg) translate3d(0px, 0px, -25px);
+    background: url("img/back.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+#vest span:nth-child(2){
+    width: 50px;
+    height: 150px;
+    transform: rotateY(90deg) translate3d(-0px, 0, 75px);
+    background: url("img/left.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+#vest span:nth-child(3){
+    width: 100px;
+    height: 150px;
+    transform: rotateY(0deg) translate3d(0px, 0, 25px);
+    background: url("img/front.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+#vest span:nth-child(4){
+    width: 50px;
+    height: 150px;
+    transform: rotateY(90deg) translate3d(-0px, 0, -25px);
+    background: url("img/right.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+#vest span:nth-child(5){
+    width: 100px;
+    height: 50px;
+    transform: rotateX(90deg) translate3d(0px, 50px, 25px);
+    background: url("img/throat.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+#vest span:nth-child(6){
+    width: 100px;
+    height: 50px;
+    transform: rotateX(90deg) translate3d(0px, 50px, -125px);
+    background: #ca9864;
+    background-image: url("img/waist.jpg");
+}
+.hand span:nth-child(1){
+    background: url("img/fronthand.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+.hand span:nth-child(2){
+    background: url("img/lefthand.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+.hand span:nth-child(3){
+    background: url("img/backhand.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+.hand span:nth-child(4){
+    background: url("img/righthand.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+.hand span:nth-child(5){
+    background: url("img/shoulder.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+.hand span:nth-child(6){
+    background: url("img/finger.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+.leg span:nth-child(1){
+    background: url("img/frontleg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+.leg span:nth-child(2){
+    background: url("img/leftleg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}.leg span:nth-child(3){
+    background: url("img/backleg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}.leg span:nth-child(4){
+    background: url("img/rightleg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}.leg span:nth-child(5){
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    background-image: url("img/waist2.jpg");
+}.leg span:nth-child(6){
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    background-image: url("img/shoe.jpg");
+}
+#menu{
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 20%;
+    background-color: rgba(139, 139, 139, 0.493);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: rgb(0, 0, 0);
+    flex-direction: column;
+}
+#dial{
+    height: 237.5px;
+    width: 90%;
+    background-color: rgba(100, 100, 100, 0.856);
+    border-radius: 50%;
+    position: relative;
+    border: 8px solid rgb(53, 53, 53);
+    color: white;
+}
+#line{
+    height: 50%;
+    width: 10px;
+    background-color: red;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 10px;
+}
+.item{
+    position: absolute;
+    bottom: 50%;
+    width: 100%;
+    transform-origin: bottom center;
+}
+.item:nth-child(1){
+    transform: rotate(90deg);
+}
+.item:nth-child(2){
+    transform: rotate(60deg);
+}
+.item:nth-child(3){
+    transform: rotate(30deg);
+}
+.item:nth-child(4){
+    transform: rotate(0deg);
+}
+.item:nth-child(5){
+    transform: rotate(-30deg);
+}
+.item:nth-child(6){
+    transform: rotate(-60deg);
+}
+.item:nth-child(7){
+    transform: rotate(-90deg);
+}
+.item:nth-child(8){
+    transform: rotate(-120deg);
+}
+.item:nth-child(9){
+    transform: rotate(-150deg);
+}
+.item:nth-child(10){
+    transform: rotate(-180deg);
+}
+.item:nth-child(11){
+    transform: rotate(-210deg);
+}
+.item:nth-child(12){
+    transform: rotate(-240deg);
+}
+
+

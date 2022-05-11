@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bouncing Balls</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="parent">
+        <div class="plate"></div>
+        <div id="balls">
+            <div class="ball"></div>
+        </div>
+        <div class="plate"></div>
+        <div>
+            <button id="balladd">Add Ball</button>
+        </div>
+    </div>
+    <script>
+        var ball = document.querySelectorAll('.ball')
+        var balladd = document.getElementById('balladd')
+        var balls = document.querySelector('#balls')
+        function generateRandom(maxVal) {
+            let randomNumber = Math.random() * maxVal;
+            randomNumber = Math.floor(randomNumber)
+            return randomNumber
+        }
+        balladd.onclick = function(){
+            randColor = generateRandom(0xFFFFFF).toString(16).padStart(6,0);
+            element = document.createElement('div')
+            element.classList.add('ball')
+            element.style.background = '#' + randColor
+            balls.append(element)
+        }
+    </script>
+</body>
+</html>

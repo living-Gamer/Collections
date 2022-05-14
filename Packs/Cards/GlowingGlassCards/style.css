@@ -1,0 +1,126 @@
+*{
+    text-align: center;
+    font-family: 'Cascaida Code', sans-serif;
+    box-sizing: border-box;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #1d061a;
+}
+.container{
+    width: 270px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    position: relative;
+}
+.container::before, .container::after{
+    content: '';
+    height: 350px;
+    width: 150px;
+    position: absolute;
+    border-radius: 8px;
+    transition: 0.5s;
+}
+.container::after{filter: blur(40px);}
+.container:nth-child(1)::before,
+.container:nth-child(1)::after{
+    transform: skew(15deg);
+    background: linear-gradient(315deg, #ffbc00, #ff0058);
+}
+.container:nth-child(2)::before,
+.container:nth-child(2)::after{
+    transform: skew(10deg);
+    background: linear-gradient(315deg, #03a9f4, #ff0058);
+}
+.container:nth-child(3)::before,
+.container:nth-child(3)::after{
+    transform: skew(-15deg);
+    background: linear-gradient(315deg, #4dff03, #00d0ff);
+}
+.container span{
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 12;
+    pointer-events: none;
+}
+.container span::before, span::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.225);
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom:0;
+    right: 0;
+    opacity: 0;
+    transition: 0.5s;
+    animation: animate 2s infinite ease-in-out;
+}
+.container:hover span::before{
+    top: -50px;
+    left: 25px;
+    opacity: 1;
+    height: 100px;
+    width: 100px;
+}
+.container:hover span::after{
+    top: calc(100% - 50px);
+    left: calc(100% - 125px);
+    opacity: 1;
+    height: 100px;
+    width: 100px;
+}
+@keyframes animate{
+    0%, 100%{
+        transform: translateY(10px);
+    }
+    50%{transform: translateY(-10px);}
+}
+.card{
+    height: 270px;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.225);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    border-radius: 5px;
+    backdrop-filter: blur(5px);
+    transition: 0.5s;
+    position: relative;
+    z-index: 10;
+}
+button{
+    background: white;
+    color: black;
+    border: none;
+    width: 100px;
+    height: 40px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+.card:hover{
+    height: 325px;
+}
+.container:hover::before,
+.container:hover::after{
+    transform: none;
+    width: 225px;
+    height: 375px;
+}

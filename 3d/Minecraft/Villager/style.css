@@ -11,40 +11,41 @@ body{
     min-height: 100vh;
 }
 #steve{
-    position: relative;
-    width: 250px;
+    width: 200px;
     height: 450px;
     transform-style: preserve-3d;
     display: flex;
     align-items: center;
     flex-direction: column;
+    justify-content: center;
 }
 #head{
-    position: relative;
     width: 100px;
     height: 100px;
     transform-style: preserve-3d;
     transform-origin: bottom center;
 }
-#body{
-    position: relative;
-    width: 100px;
-    height: 350px;
+#shoulder, #waist{
+    width: 200px;
+    height: 150px;
     transform-style: preserve-3d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+#waist{height: 150px;}
 .arm{
-    position: absolute;
     width: 50px;
     height: 150px;
     transform-style: preserve-3d;
     transform-origin: top center;
 }
-#lefthand{left: -50px;}
-#righthand{left: 100px;}
-#leftleg{top: 150px;}
-#rightleg{top: 150px;left:50%;}
+.top, .bottom{
+    position: relative;
+    transform-style: preserve-3d;
+    transform-origin: top center;
+}
 #vest{
-    position: absolute;
     width: 100px;
     height: 150px;
     transform-style: preserve-3d;
@@ -54,7 +55,6 @@ span{
     top: 0;
     left: 0;
 }
-
 #head span:nth-child(1){
     width: 100px;
     height: 100px;
@@ -148,6 +148,17 @@ span{
     transform: rotateX(90deg) translate3d(0px, 0px, -125px);
     background: #d8aa77;
 }
+.hand{transform: rotateX(30deg);}
+.hand .bottom{
+    top: 75px;
+    left: -25px;
+    transform: rotateZ(-90deg);
+}
+#righthand .bottom{transform: rotateZ(90deg); left: 25px;}
+.hand .top span{height: 75px;}
+.hand .bottom span{height: 100px;}
+.hand .top span:nth-child(5), .hand .top span:nth-child(6), .hand .bottom span:nth-child(5), .hand .bottom span:nth-child(6){height: 50px;}
+.hand .top span:nth-child(6), .hand .bottom span:nth-child(6){transform: rotateX(90deg) translate3d(0px, 0px, -50px);}
 #vest span:nth-child(1){
     width: 100px;
     height: 150px;
@@ -199,42 +210,6 @@ span{
     transform: rotateX(90deg) translate3d(0px, 50px, -125px);
     background: #ca9864;
     background-image: url("img/waist.jpg");
-}
-.hand span:nth-child(1){
-    background: url("img/fronthand.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
-}
-.hand span:nth-child(2){
-    background: url("img/lefthand.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
-}
-.hand span:nth-child(3){
-    background: url("img/backhand.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
-}
-.hand span:nth-child(4){
-    background: url("img/righthand.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
-}
-.hand span:nth-child(5){
-    background: url("img/shoulder.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
-}
-.hand span:nth-child(6){
-    background: url("img/finger.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
 }
 .leg span:nth-child(1){
     background: url("img/frontleg.jpg");

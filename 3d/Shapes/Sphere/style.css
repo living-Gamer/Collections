@@ -1,11 +1,15 @@
+body {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .scene {
   perspective: 400vmin;
   transform-style: preserve-3d;
-  position: absolute;
-  width: 80vmin;
-  height: 80vmin;
-  top: 10vmin;
-  left: 10vmin;
+  width: 500px;
+  height: 500px;
+
 }
 
 .sphere {
@@ -109,8 +113,4 @@ transform: rotateZ(-25deg) rotateX(-20deg) rotateY(180deg);
   100% {
 transform: rotateZ(25deg) rotateX(20deg) rotateY(360deg);
   }
-}
-
-body {
-  overflow: hidden;
 }

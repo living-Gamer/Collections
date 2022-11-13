@@ -117,3 +117,9 @@ span:nth-child(2) .logo{
 .box:nth-child(3) span:nth-child(2):before, .box:nth-child(3) span:nth-child(4):before{
     background-color: #ecd014;
 }
+@media screen and (max-width: 800px) {
+    body {
+        height: 200vh;
+        flex-direction: column;
+    }
+}

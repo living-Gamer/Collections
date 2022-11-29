@@ -30,7 +30,7 @@ body{
     border-radius: 8px;
     transition: 0.5s;
 }
-.container::after{filter: blur(40px);}
+.container::after{filter: blur(25px);}
 .container:nth-child(1)::before,
 .container:nth-child(1)::after{
     transform: skew(15deg);
@@ -61,7 +61,7 @@ body{
     width: 100%;
     height: 100%;
     background: rgba(255, 255, 255, 0.225);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(4px);
     border-radius: 8px;
     position: absolute;
     top: 0;
@@ -101,7 +101,7 @@ body{
     justify-content: space-evenly;
     flex-direction: column;
     border-radius: 5px;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(2px);
     transition: 0.5s;
     position: relative;
     z-index: 10;
